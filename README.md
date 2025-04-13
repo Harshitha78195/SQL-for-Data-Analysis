@@ -1,53 +1,55 @@
-SQL for Data Analysis
-Objective
-This project demonstrates the use of SQL queries to extract, manipulate, and analyze data from an Ecommerce_SQL_Database using PostgreSQL.
+# SQL for Data Analysis – Ecommerce Dataset
 
-Tools Used
-PostgreSQL
+## Objective
+This project demonstrates how to use **PostgreSQL** for performing data analysis on a structured **Ecommerce SQL Database**. It includes creation of tables, data insertion, and a variety of SQL queries to extract insights from the data.
 
-Dataset
-A simulated e-commerce dataset containing:
+---
 
-products: List of products with category, price, stock quantity, and date added.
+## Tools Used
+- PostgreSQL
+- SQL (DDL & DML)
+- pgAdmin or any PostgreSQL client
 
-sales: Records of product sales including quantity and sale date.
+---
 
-Key Concepts Applied
-Data Retrieval and Filtering: SELECT, WHERE, ORDER BY
+## Dataset Overview
+Two tables were created:
+- `products`: Stores details about ecommerce products.
+- `sales`: Stores sales transaction records linked to products.
 
-Aggregation: GROUP BY, SUM, AVG, COUNT
+---
 
-Table Joins: INNER JOIN, LEFT JOIN
+## SQL Concepts Covered
+- Basic Queries: `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`
+- Joins: `INNER JOIN`, `LEFT JOIN`
+- Subqueries
+- Aggregate Functions: `SUM`, `AVG`
+- Views for summarized analysis
+- Index creation for query optimization
 
-Subqueries: Used for conditional filtering based on aggregate values
+---
 
-Views: Created reusable views for sales summary
+## Deliverables
+- `ecommerce_analysis.sql`: SQL file containing:
+  - Table creation
+  - Data insertion (20+ rows)
+  - Analysis queries
+- `/screenshots`: Folder containing screenshots of query results
 
-Indexes: Added to optimize query performance
+---
 
-SQL Features Demonstrated
-Create and insert data into tables
+## Learning Outcome
+- Gained hands-on experience in querying structured data
+- Learned to analyze sales trends, revenue, and product insights
+- Practiced query optimization with indexing
 
-Execute analysis queries such as:
+---
 
-Total products by category
+##  How to Use
+1. Import `ecommerce_analysis.sql` into your PostgreSQL environment.
+2. Run queries sequentially or as needed.
+3. Refer to `/screenshots` for expected outputs.
 
-Products with above-average price
+---
 
-Total revenue from sales
 
-Product-wise sales performance
-
-Use of joins to combine data across tables
-
-Creation of indexed columns for performance
-
-Defined views for ongoing analysis
-
-Deliverables
-ecommerce_analysis.sql: Contains all table definitions, data inserts, and queries.
-
-Screenshots folder: Includes output screenshots of each major query.
-
-Outcome
-Hands-on experience in querying and analyzing structured data using PostgreSQL. This project builds foundational skills in SQL for real-world data analysis tasks.
